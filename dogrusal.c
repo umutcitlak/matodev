@@ -1,5 +1,31 @@
 #include <stdio.h>
 #include <math.h>
+
+/*  --ALGORİTMA--
+1.  Start
+2.  Verileri al
+3.  Verilen iki kökü fonksiyona koy ve çıkan değerleri çarp
+4.  Sonucun sıfırdan küçük olup olmadığını kontrol et küçükse bu aralıkta kök vardır. Adım 5' e
+    geç. Küçük değilse aralıkta kök yoktur adım 16'ya git.
+5.  En son bulunan iki kök arasındaki farkı bul.Bulunan değer hatapayıdır.son kökü değikene
+    al ezilip kaybolmaması için
+6.  Hata payı toleranstan büyükse döngüye gir(Adım 7 den devam).Değilse Adım 15 e git.
+7.  Yeni kökü (xlower * f(xupper) - xupper * f(xlower)) / (f(xupper) - f(xlower) formülünü
+    kullanarak bul.
+8.  Lower kök ile yeni bulunan kökün fonksiyonlardaki değerlerini çarp
+9.  Sonuç sıfırdan küçükse upper kökü yeni bulunan kök olarak kabul et.
+10. Büyükse  lower kökü yeni bulunan kök olarak kabul et.
+11. Sıfıra eşitse kök zaten bulunmuş demektir.adım 15'e git.
+12. Son iki kökün farkını alarak hata payını bul.
+13. Son bulunan kökü değişkende tut.
+14. Adım 6 ya git.
+15. Bulunan kökü yazdır.
+16. Stop
+ */
+
+
+
+
 double f(double x)
 {
     

@@ -1,5 +1,15 @@
 #include <stdio.h>
 #include <math.h>
+/*  --ALGORİTMA--
+1.  Start
+2.  Verileri al
+3.  yeni kökü formülü kullanarak bul.(x = x0 - f(x0) / f1(x0);)
+4.  son iki kökün farkını bularak hata payını belirle.
+5.  bi önceki kökü son bulduğun kökün değerine eşle
+6.  hata payı büyükmü toleranstan kontrol et.büyükse adım 3'e git.değilse adım 7.
+7.  bulunan kökü yazdır
+8.  stop
+ */
 
 double f(double x)
 {

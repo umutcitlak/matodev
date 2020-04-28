@@ -1,6 +1,21 @@
 #include <stdio.h>
 #include <math.h>
 
+
+/*  --ALGORİTMA--
+1.  start
+2.  değişkenlerin değerlerini ata (x, toplam, turev, x0, k)
+3.  fonksiyon 4 katlarında tekrarlayan bir rutin içinde ilerlemektedir.
+4.  k 4 den küçükmü kontrol edilir. true ise adım 5 e. değilse adım 8 e git
+5.  k nın mod 4 ü alınır. modun sonucuna göre turev değeri alınır
+6.  bulunan değerler formülde yazılarak serinin geçerli aşamadaki
+    değeri bulunur toplama eklenir.
+7.  bir sonraki iterasyon için k 1 artırılır.Adım 4 e git.
+8.  serinin x değeri için değeri ekrana yazılır.
+9.  stop
+
+*/
+
 double fak(int a)
 {
     if (a == 1 || a == 0)

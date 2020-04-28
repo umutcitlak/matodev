@@ -1,12 +1,19 @@
 #include <stdio.h>
 #include <math.h>
 /*
-1-) sayı sıfırda while
-2-) sayının ikiye bölümünde  kalanı diziye ekle
-3-) sayıyı ikiye böl
-4-) adım bire git
-5-) diziyi ters çevir
+--ALGORİTMA--
+1. start
+2. sayıyı al.i değişekni sıfır yap index olarak kullan
+3. sayı sıfırdan farklı ise adım 4 e git.Değilse adım 8'e git
+4. dizinin i değerindeki index'e sayının ikiye bölümünden kalanı ekle
+5. sayıyı iikiye böl.(float kısmı alınmayacak)
+6. i değerini bir arttır
+7. adım 3' e git
+8. for ile diziyi ters çevir.(dizideki binary sayı tersten okunur.ters çevirerek sayı düzeltilir)
+9. sayıyı ekrana yazdır
+10. stop
 */
+
 short binaryreverse[32];
 short binary[32];
 int main(int argc, char const *argv[])

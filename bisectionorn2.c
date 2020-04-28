@@ -1,6 +1,35 @@
 #include <stdio.h>
 #include <math.h>
 
+/*  --ALGORİTMA--
+
+1.  Start
+2.  Verileri al
+3.  Kullanıcıdan iterasyon sayısını girmek istediğini mi yoksa iterasyon önerisi mi almak istediğni sor
+    ( Switch Case 1'i seçerse adım 4'e, 2'yi seçerse adım 5'e git)
+4.  İterasyon sayısını al. Adım 7'ye git.
+5.  İstenilen hata payını kullanıcıdan al.minimum iterasyon sayısını hesapla.
+6.  Ekrana minimum iterasyon sayısını yazdır adım 4 egit.
+7.  Verilen iki kökü fonksiyona koy ve çıkan değerleri çarp
+8.  Sonucun sıfırdan küçük olup olmadığını kontrol et küçükse bu aralıkta kök vardır. Adım 9'a
+    geç. Küçük değilse aralıkta kök yoktur adım 21'e git.
+9.  En son bulunan iki kök arasındaki farkı bul.Bulunan değer hatapayıdır.son kökü değikene
+    al ezilip kaybolmaması için
+10. İterasyon değeri sıfırdan büyükse döngüye gir.(Adım 11 den devam).Değilse Adım 20 e git.
+11. İterasyon değerini 1 azalt.
+12. Yeni kökü iki kökün aritmetik ortalamasını alarak bul.
+13. Lower kök ile yeni bulunan kökün fonksiyonlardaki değerlerini çarp
+14. Sonuç sıfırdan küçükse upper kökü yeni bulunan kök olarak kabul et.
+15. Büyükse  lower kökü yeni bulunan kök olarak kabul et.
+16. Sıfıra eşitse kök zaten bulunmuş demektir.adım 20'e git.
+17. Son iki kökün farkını alarak hata payını bul.
+18. Son bulunan kökü değişkende tut.
+19. Adım 10 na git.
+20. Bulunan kökü yazdır.
+21. Stop
+ */
+
+
 double f(double x);
 int iterasyononeri(double hatapayi, double aralik1, double aralik2);
 

@@ -1,6 +1,23 @@
 #include <stdio.h>
 #include <math.h>
+/*  --ALGORİTMA--
+1.  start
+2.  değişkenlerin değerlerini ata (x, toplam, turev, x0, k)
+3.  lnx in değeri alınır .
+4.  serinin ilk aşaması için formulde yerine yazılır toplama eklenir.
+5.  bir sonraki iterasyon için k 1 artırılır.
+6.  sabit diye bir değişken oluşturulup değeri 1 yapılır.
+    (sabit değişkeni türev alırken kullanılmak için kullanılıyor.) 
+7.  k 4 den küçükmü kontrol edilir. true ise adım 8 e.
+    false ise adım 12 ye gidilir.  
+8.  türev alınır
+9.  türev formülde yerine konur.sonuç toplama eklenir.  
+10. k 1 artırılır.
+11. adım 4 e gidilir.
+12. serinin x değeri için değeri ekrana yazılır.
+13. stop
 
+*/
 double fak(int a)
 {
     if (a == 1 || a == 0)

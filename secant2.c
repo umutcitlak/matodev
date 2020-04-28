@@ -1,5 +1,17 @@
 #include <stdio.h>
 #include <math.h>
+/*  --ALGORİTMA--
+1.  Start
+2.  Verileri al
+3.  Yeni kökü x0 ve x1 değerlerini formülde yerine
+    yazarak bul. (x2 = x1 - ((f(x1) * (x0 - x1)) / (f(x0) - f(x1)));)
+4.  son iki kökün farkını bularak hata payını belirle.
+5.  x0'a x1 kökünün değerini koy
+6.  x1'e yeni kökün değerini koy
+7.  Hata payı toleranstan büyükse döngüye gir(Adım 3'e git).Değilse Adım 8 e git.
+8.  En son bulunan kökü yazdır.
+8.  stop
+ */
 double f(double x)
 {
     return pow(x,3)/5-5;

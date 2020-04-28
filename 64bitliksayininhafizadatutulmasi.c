@@ -11,7 +11,7 @@ int main()
     int sayac2 = 0;
     int s1 = 11;
     int s2 = 12;
-    printf("çekilecek 64 bit sayiyi giriniz ");
+    printf("çevrilecek 64 bit sayiyi giriniz ");
     scanf("%s", &sayi);
     if (sayi[0] == '0')
         s = 0;
